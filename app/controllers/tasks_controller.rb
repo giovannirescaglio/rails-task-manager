@@ -5,6 +5,8 @@ class TasksController < ApplicationController
   end
 
   def show
+    @task = Task.find(params[:id])
+    # redirect_to task(@task)
   end
 
 end

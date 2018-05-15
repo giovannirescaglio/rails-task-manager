@@ -1,3 +1,33 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+height: 100vh;
+}
+
+.completed{
+  display: flex;
+}
+
+i {
+
+  padding: 4px;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+.details{
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #DCDBD9;
+  padding: 23px;
+}
+.fa-square {
+
+  padding: 5px;
+}
