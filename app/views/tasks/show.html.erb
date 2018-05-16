@@ -12,10 +12,13 @@
     <% else %> <i class="far fa-square"></i> <p> this task isn't completed ! </p>
 
     <% end %>
-
-
   </div>
 
 <%= link_to "back to list", tasks_path %>
+
+<%= link_to edit_path do%>
+  <button type="button" class="edit-btn btn btn-primary"> Edit your task </button>
+<% end %>
+
 </div>
 

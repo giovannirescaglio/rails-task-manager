@@ -1,18 +1,27 @@
-<h1> Hello here are your tasks </h1>
 
- <% @tasks.each do |task| %>
-  <ul>
-    <% if task.completed %>
-    <i class="fas fa-check"></i>    <%= link_to task.title, task_path(task)%>
-       <% else %> <i class="far fa-square"></i> <%= link_to task.title, task_path(task) %>
-  </ul>
+<div class="container">
+  <h1> Hello here are your tasks </h1>
+
+   <% @tasks.each do |task| %>
+    <ul>
+      <% if task.completed %>
+      <i class="fas fa-check"></i> <%= link_to task.title, task_path(task) %>
+      <% else %> <i class="far fa-square"></i> <%= link_to task.title, task_path(task) %>
+
+      <% end %>
+    </ul>
   <% end %>
-<% end %>
+<div class= "link"> <%= link_to 'add a new task' , new_path %> </div>
+
+</div>
+
+
+<%= link_to "Delete", restaurant_path(restaurant),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
 
 
 
-
-
-
-
+ <%= link_to task_path(tasks), method: :delete do %>
+  <i class=“fas fa-trash-alt”></i>
 
